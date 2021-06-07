@@ -31,7 +31,7 @@ let addTodoItem = function (event) {
   liElem.appendChild(deleteBtn);
   todoList.appendChild(liElem);
 
-  // inputField.value = "";
+  inputField.value = "";
 };
 
 let deleteListItem = function (event) {
@@ -44,11 +44,9 @@ let checkListItem = function (event) {
   let textItem = event.target.nextElementSibling;
 
   if (event.target.checked) {
-    console.log("entered if");
     listItem.classList.add("checkBox");
     textItem.firstChild.classList.add("textItem");
   } else {
-    console.log("entered else");
     listItem.classList.remove("checkBox");
     textItem.firstChild.classList.remove("textItem");
   }

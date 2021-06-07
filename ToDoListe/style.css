@@ -6,6 +6,7 @@
 
 body {
   background-color: rgb(248, 248, 248);
+  font-family: sans-serif;
 }
 
 main,
@@ -21,7 +22,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  min-width: 20rem;
+  min-width: 24rem;
   min-height: 10rem;
   padding: 1rem;
   border-radius: 10px;
@@ -39,6 +40,7 @@ header {
 #input-container input {
   padding: 1rem;
   border-radius: 10px;
+  font-family: sans-serif;
 }
 
 #input-container button {
