@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 
-.itemContainer {
+.listItem {
   width: 20rem;
-  background-color: yellow;
+  background-color: rgb(225, 226, 226);
   padding: 1rem;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   margin: 0.3rem;
 }
 
-.itemContainer button {
-  /* deleteBtn */
+.textContainer {
+  width: 17rem;
+}
+
+.listItem button {
   border: red;
   width: 1rem;
   height: 1rem;
@@ -27,12 +31,15 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  flex: 1rem;
 }
 
-.itemContainer input {
+.listItem input {
   width: 1rem;
   height: 1rem;
   cursor: pointer;
+  flex: 1rem;
+  margin-right: 0.5rem;
 }
 
 .textItem {

@@ -13,25 +13,22 @@ let addTodoItem = function (event) {
   let p5 = document.createElement("p5");
   p5.textContent = inputField.value;
 
-  // liElem.textContent = inputField.value;
-
   let deleteBtn = document.createElement("button");
   deleteBtn.textContent = "X";
   deleteBtn.addEventListener("click", deleteListItem);
 
-  let container = document.createElement("div");
-  container.classList.add("itemContainer");
+  let textContainer = document.createElement("div");
+  textContainer.classList.add("textContainer");
 
   let checkBox = document.createElement("input");
   checkBox.setAttribute("type", "checkbox");
   checkBox.addEventListener("change", checkListItem);
 
-  container.appendChild(checkBox);
-  container.appendChild(p5);
-  container.appendChild(deleteBtn);
+  textContainer.appendChild(p5);
 
-  liElem.appendChild(container);
-  // liElem.appendChild(checkBox);
+  liElem.appendChild(checkBox);
+  liElem.appendChild(textContainer);
+  liElem.appendChild(deleteBtn);
   todoList.appendChild(liElem);
 
   // inputField.value = "";
@@ -49,7 +46,7 @@ let checkListItem = function (event) {
   if (event.target.checked) {
     console.log("entered if");
     listItem.classList.add("checkBox");
-    textItem.classList.add("textItem");
+    textItem.firstChild.classList.add("textItem");
   } else {
     console.log("entered else");
     listItem.classList.remove("checkBox");
