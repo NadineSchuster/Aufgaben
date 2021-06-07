@@ -11,12 +11,12 @@ let addTodoItem = function (event) {
   let liElem = document.createElement("li");
   liElem.classList.add("listItem");
 
-  let p5 = document.createElement("p5");
-  p5.textContent = inputField.value;
+  let h5 = document.createElement("h5");
+  h5.textContent = inputField.value;
 
   let textContainer = document.createElement("div");
   textContainer.classList.add("textContainer");
-  textContainer.appendChild(p5);
+  textContainer.appendChild(h5);
 
   let deleteBtn = document.createElement("button");
   deleteBtn.textContent = "X";
@@ -49,7 +49,7 @@ let checkListItem = function (event) {
 
   if (event.target.checked) {
     listItem.classList.add("checkBox");
-    // in the div-container is the p5 tag
+    // in the div-container is the h5 tag
     textItem.firstChild.classList.add("textItem");
   } else {
     listItem.classList.remove("checkBox");
