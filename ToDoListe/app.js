@@ -50,7 +50,7 @@ let checkListItem = function (event) {
   } else {
     console.log("entered else");
     listItem.classList.remove("checkBox");
-    textItem.classList.remove("textItem");
+    textItem.firstChild.classList.remove("textItem");
   }
 };
 
